@@ -1,4 +1,3 @@
-import { Statistics } from "./Statistics";
 import css from './Statistics.module.css';
 
 export function StatisticsList({ items }) {
