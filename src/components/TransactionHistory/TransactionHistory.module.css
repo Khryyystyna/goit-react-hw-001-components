@@ -1,0 +1,23 @@
+
+.transaction {
+    margin: auto;
+    width: 550px;
+}
+
+.th {
+    align-items: center;
+    /* background-color: rgb(76, 153, 181); */
+    background: linear-gradient(#1a9aa3, #78d7de);
+    color: white;
+    height: 40px;
+    border-radius: 3px;
+}
+
+.td {
+    align-items: center;
+    text-align: center;
+    height: 30px;
+    background-color: #8fc7cc;
+    color: #4b5357;
+    border-radius: 3px;
+}
