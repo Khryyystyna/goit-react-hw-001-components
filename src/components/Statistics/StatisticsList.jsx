@@ -1,3 +1,5 @@
+import  PropTypes from 'prop-types'
+
 import css from './Statistics.module.css';
 
 export function StatisticsList({ items }) {
@@ -11,3 +13,8 @@ export function StatisticsList({ items }) {
         </ul> 
 }
 
+StatisticsList.propTypes = {
+    items: PropTypes.arrayOf(PropTypes.shape({
+      id: PropTypes.string.isRequired,
+  })).isRequired,
+};

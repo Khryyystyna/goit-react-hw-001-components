@@ -1,3 +1,4 @@
+import  PropTypes from 'prop-types'
 import css from './FriendList.module.css';
 
 export const FriendList = ({ friend: { avatar, name, isOnline, id } }) => {
@@ -10,4 +11,11 @@ export const FriendList = ({ friend: { avatar, name, isOnline, id } }) => {
             </li>
         </ul >
     );
+};
+
+FriendList.propTypes = {
+    friend: PropTypes.shape({
+        name: PropTypes.string.isRequired,
+        id: PropTypes.number.isRequired,
+  }).isRequired,
 };
